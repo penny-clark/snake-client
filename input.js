@@ -13,6 +13,12 @@ const handleUserInput = (key) => {
     setInterval(() => {connection.write('Move: down')}, pace);
   } else if (key === 'd') {
     setInterval(() => {connection.write('Move: right')}, pace);
+  } else if (key === 'h') {
+    connection.write('Say: Hi!')
+  } else if (key === 'b') {
+    connection.write('Say: bye')
+  } else if (key === 'o') {
+    connection.write('Say: ok')
   }
 }
 
