@@ -27,13 +27,13 @@ const connect = function() {
   });
 
   //requesting snake movement from server
-  conn.on('connect', () => {
-    //hardcoded Move:up - leaving here for reference but it shouldn't be used
-    //setInterval(() => {conn.write("Move: up")}, 50);
-  });
-
+  // conn.on('connect', () => {
+  //   //hardcoded Move:up - leaving here for reference but it shouldn't be used
+  //   //setInterval(() => {conn.write("Move: up")}, 50);
+  // })
   return conn;
 }
+
 
 console.log('Connecting ...');
 connect();
